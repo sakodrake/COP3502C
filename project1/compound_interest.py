@@ -1,4 +1,4 @@
-initial_principal = float(input("Initial principle: "))
+initial_principal = float(input("Initial principle1: "))
 interest_rate = float(input("Interest rate: ")) * 0.01
 num_appliedperyear = float(input("How many times does interest apply annually: "))
 years_past = float(input("How many years have passed: "))
