@@ -9,6 +9,7 @@ def fibonacci(n):
        a, b = b , b + a
     return b
 
+print(fibonacci(6))
 
 def is_prime(n):
     if n == 1 or n <= 0:
@@ -27,8 +28,14 @@ def is_prime(n):
 def print_prime_factors(n):
     factors = []
     original_number = n 
-    for i in range(2, n+1):
-         while n % i == 0:
-             factors.append(i)
-             n = n // i
-    print(f"{original_number} = {' * '.join(map(str,factors))}")
+    while n % 2 ==0:
+        factors.append(n)
+        n = n // 2
+    while n % 3 == 0:
+        factors.append(n)
+        n = n // 3
+    while n % 5 == 0 :
+        factors.append(n)
+    return print(f"{original_number} = {factors}")
+
+print(print_prime_factors(10))

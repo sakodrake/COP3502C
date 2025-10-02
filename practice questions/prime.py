@@ -29,7 +29,7 @@ def print_inverse_triangle(base):
     for i in range(0, base + 1):
         print("*" * (base - i))
 
-print_inverse_triangle(5)
+
 
             
         

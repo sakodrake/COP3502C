@@ -5,6 +5,7 @@ still_playing = True
 game_number = 1
 p_bank = []
 player_card = ''
+dealer_hand = ''
 p_card = player_card
 
 
@@ -38,7 +39,20 @@ def choose():
      option = input('Choose an option: ')
      if option == 1:
          cards(p_card)
-
+     if option == 2:
+         dealer_hand = rng.next_int(13) + 1
+         print(f"Dealer's hand: {dealer_hand}")
+         print(f"Your hand is: {hand}")
+         if hand == dealer_hand:
+             print("It's a tie!")
+         elif hand == 21:
+             print("BLACKJACK!")
+         if dealer_hand > 21 or dealer_hand < hand:
+             print("You win!")
+         else: 
+             print("You lost!")
+         
+         
 
 print('START GAME #1')
 print('')
