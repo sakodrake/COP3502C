@@ -2,7 +2,7 @@ def is_strictly_increasing(numbers):
     compare = []
     if len(numbers) < 2:
         return True
-    for i in range(0, len(numbers)):
+    for i in range(1, len(numbers)):
         if i == numbers:
             break
         if numbers[i] < numbers [i +1]:
